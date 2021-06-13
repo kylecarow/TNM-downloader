@@ -58,5 +58,5 @@ for file_num, file_info in enumerate(zip(file_keys, file_sizes), 1):
     # Display download progress %
     progress_bytes += file_size
     progress_pct = 100 * progress_bytes/total_size
-    print('Progress: \033[92m{:.2f}%\033[0m ({} of {} bytes)\n'
+    print('Progress: {:.2f}% ({} of {} bytes)\n'
               .format(progress_pct, progress_bytes, total_size))
