@@ -1,2 +1,4 @@
 # USGS-DEM-downloader
-WIP rudimentary downloading script for 1/3 arcsecond USGS DEM data
+Downloading script for the 1/3 arc-second USGS DEM (.tif)
+
+Created for downloading TIFF files from the publicly available 1/3 arc-second resolution USGS DEM.
