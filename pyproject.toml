@@ -1,0 +1,14 @@
+[project]
+name = "tnmdownloader"
+version = "0.0.0"
+authors = [
+    { name = "Kyle Carow", email = "kylecarow@gmail.com" }
+]
+dependencies = [
+    "boto3",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+]
