@@ -5,6 +5,7 @@ https://github.com/kylecarow
 
 TNM_downloader.py
 Downloading script for the 1/3 arc-second USGS DEM (.tif)
+http://prd-tnm.s3.amazonaws.com/index.html?prefix=StagedProducts/Elevation/13/TIFF/current/
 """
 
 import os
@@ -46,7 +47,7 @@ if __name__ == "__main__":
     # Location of TIFF files in bucket
     PREFIX = "StagedProducts/Elevation/13/TIFF/current/"
     # Regex pattern to match files
-    REGEX_PATTERN = r"USGS_13_([n|s]\d{2}[e|w]\d{3})\.tif$"
+    REGEX_PATTERN = r"USGS_13_([n|s]\d{2}[e|w]\d{3})\.(tif|xml)$"
 
     # Initialize boto3 client in anonymous configuration
     s3 = boto3.client("s3", config=Config(signature_version=UNSIGNED))
